@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html><body class="grid items-center justify-items-center h-[100vh]">
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,9 +8,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Frontend Mentor | Bento grid</title>
 </head>
-<body class="grid items-center justify-items-center h-[100vh]">
-  <main class="w-[50vw]">
-    <section class="grid grid-rows-6 grid-cols-4 p-25 bg-[hsl(0,0%,96%)]">
+<body class="min-h-screen flex justify-center md:grid md:items-center md:justify-items-center">
+  <main class="w-full px-4 md:w-[50vw]">
+
+    <section class="
+  flex flex-col gap-4 p-4 bg-[hsl(0,0%,96%)]
+  md:grid md:grid-rows-6 md:grid-cols-4 md:p-6
+">
       
       <div class= "grid row-span-6 col-span-1 gap-[16px] mr-[14px]">
         
@@ -49,7 +54,8 @@
         </div>
       </div>
 
-      <div class="flex row-start-4 row-end-5 col-start-1 col-end-5 gap-[16px]">
+      <div class="flex flex-col gap-4 md:flex-row md:row-start-4 md:row-end-5 md:col-start-1 md:col-end-5">
+
         <div class="bg-[hsl(0,0%,100%)] col-span-1 row-span-1 rounded-md">
           <div class="text-xl">>56%</div>
           <div>faster audience growth</div>
@@ -67,3 +73,4 @@
   </main>
 </body>
 </html>
+
